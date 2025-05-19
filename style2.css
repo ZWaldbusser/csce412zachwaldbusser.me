@@ -1,0 +1,177 @@
+
+
+/*TODO: Redesign the entire .css file for the second style (dark mode)*/
+/*Focus on the style first, then the colors*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: white;
+
+}
+a:link{
+  color: #e00;  
+}
+a:visited {
+    color: #FFA500;
+}
+
+
+/*Restyle the top navigation*/
+.topnav {
+    overflow: hidden;
+}
+.topnav a {
+    top: 0px;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #444;
+
+}
+.topnav a.active {
+    background-color: #777;
+}
+
+/*Landing page styling*/
+/*TODO: Figure out how to get the text on the left, and shape the image*/
+.landingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.landingWritingContainer{
+    text-align: center;
+    padding-left: 40px;
+    order: 1;
+    
+
+}
+.landingHeadshotContainer{
+    text-align: center;
+    padding-left: 40px;
+    order: 2;
+}
+.landingImage{
+    border-radius: 50% / 100%;
+}
+
+
+/* Qualification Page*/
+.qualificationContainer{
+    display: flex;
+    text-align: center;
+}
+.qualSkills{
+    order: 3;
+    margin-left: 20px;
+}
+.qualInterests{
+    order: 1;
+    text-align: center;
+}
+.resumeFrame{
+    order: 2;
+    margin-left: 20px;
+}
+
+/* Technical Page*/
+/*TODO: Get the text boxes in flex and style them to be horizontally aligned*/
+.technicalWriting{
+    display: flex;
+    line-height: 1.6;
+    justify-content: space-between;
+    align-items: top;
+    text-align: center;
+
+}
+.agternContainer {
+    margin: 20px;
+}
+.cpuContainer{
+    margin: 20px;
+}
+.tvContainer{
+    margin: 20px;
+}
+
+
+
+/*Service*/
+/*Set the width on the textboxes*/
+.serviceBox{
+    display: flex;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+.servPar1 {
+    order: 1;
+    margin-top:38px;
+}
+.servPar2 {
+    order: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.servPar3 {
+    order: 3;
+}
+
+
+
+
+
+/*AI-Generated .css*/
+/* Collage Styles */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columns grid */
+    grid-template-rows: repeat(6, 1fr); /* 6 rows grid */
+    gap: 10px; /* Spacing between images */
+    padding: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Image specific grid layouts */
+.landscape {
+    grid-column: span 4; /* Landscape spans 4 columns */
+    grid-row: span 2;    /* Landscape spans 2 rows */
+}
+
+.portrait {
+    grid-column: span 2; /* Portrait spans 2 columns */
+    grid-row: span 3;    /* Portrait spans 3 rows */
+}
+
+.square {
+    grid-column: span 2; /* Square spans 2 columns */
+    grid-row: span 2;    /* Square spans 2 rows */
+}
+
+/* Textbox Styles */
+.textbox {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textbox p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
